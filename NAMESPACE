@@ -1,0 +1,21 @@
+import(spatstat.geom, spatstat.explore, spatstat.model, spatstat.random, spatstat.linnet, spatstat)
+
+importFrom("grDevices", "grey")
+importFrom("graphics", "arrows", "par", "plot", "segments")
+importFrom("stats", "na.omit", "rbinom", "runif")
+importFrom("Rcpp", "evalCpp")
+
+useDynLib(ttbary, .registration = TRUE)
+
+export("kmeansbary",
+       "kmeansbaryeps",
+       "kmeansbarynet",
+       "kmeansbaryweightnet",
+       "netsplit",
+       "plotmatch",
+       "ppdist",
+       "ppdistnet",
+       "sumppdist",
+       "sumppdistnet",
+       "drezner"
+       )

@@ -1,0 +1,78 @@
+----------------------------------------------------------------
+
+  CHANGES IN ttbary VERSION 0.3-2  (2025-08-28)
+
+OVERVIEW
+
+    o  CRAN maintenance update
+
+
+----------------------------------------------------------------
+
+  CHANGES IN ttbary VERSION 0.3-1  (2022-11-16)
+
+OVERVIEW
+
+    o  Necessary changes to make the package compatible with
+       spatstat 3.0 and later. This version will not work with
+       older versions of spatstat
+
+
+----------------------------------------------------------------
+
+  CHANGES IN ttbary VERSION 0.3-0  (2022-08-15)
+
+OVERVIEW
+
+    o  Adds a new function called 'drezner' to compute
+       an exact barycenter point for a point cloud in R^2 based
+       on limited squared Euclidean distances.
+
+    o  Introduces the parameter 'exact' in functions kmeansbary
+       and kmeansbaryeps. If exact=TRUE, these functions use
+       the internal C++ code of 'drezner' for computing
+       barycenter candidates. The previous behavior of the
+       functions is obtained by keeping the default of
+       exact=FALSE, which is faster and does not give
+       systematically worse results.
+
+
+----------------------------------------------------------------
+
+  CHANGES IN ttbary VERSION 0.2-2  (2022-02-19)
+
+OVERVIEW
+
+    o  Necessary changes to make the package compatible with
+       spatstat 2.3 and later. This version will not work with
+       older versions of spatstat
+
+
+----------------------------------------------------------------
+
+  CHANGES IN ttbary VERSION 0.2-0  (2021-03-17)
+
+OVERVIEW
+
+    o  Necessary changes to make the package compatible with
+       spatstat 2.0 and later. This version will not work with
+       older versions of spatstat (use v0.1-1 for that case)
+
+
+----------------------------------------------------------------
+
+	CHANGES IN ttbary VERSION 0.1-1  (2019-11-30)
+
+OVERVIEW
+
+    o  Minor changes to user interface and documentation based
+       on CRAN review
+
+
+----------------------------------------------------------------
+
+	CHANGES IN ttbary VERSION 0.1-0  (2019-11-23)
+
+OVERVIEW
+
+    o  First public release
